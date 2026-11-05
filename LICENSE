@@ -1,0 +1,31 @@
+# 许可证 License
+
+本项目是 [datawhalechina/all-in-rag](https://github.com/datawhalechina/all-in-rag)（Datawhale 出品）的**衍生作品**，基于其 `code/C8` 章节代码改造而来。
+
+依据上游作品「相同方式共享」的要求，本项目采用与上游一致的许可证：
+
+## CC BY-NC-SA 4.0
+
+**知识共享署名—非商业性使用—相同方式共享 4.0 国际许可协议**
+（Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International）
+
+您可以自由地：
+
+- **共享** — 复制、分发本作品
+- **演绎** — 修改、创作衍生作品
+
+但必须遵守以下三条：
+
+1. **署名（BY）** — 必须给出适当的署名，提供指向本许可协议的链接，并说明是否对原作做了修改。
+2. **非商业性使用（NC）** — 不得将本作品（或衍生作品）用于商业目的。
+3. **相同方式共享（SA）** — 若修改、转换或以本作品为基础创作衍生作品，必须以**相同的许可证**分发。
+
+### 官方链接
+
+- 许可摘要（人类可读）：<https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh>
+- 完整法律文本（legalcode）：<https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode>
+
+### 署名 Attribution
+
+- **上游作品**：[datawhalechina/all-in-rag](https://github.com/datawhalechina/all-in-rag) — Datawhale 出品，CC BY-NC-SA 4.0
+- **本衍生作品改动**：将原「尝尝咸淡」食谱 RAG 系统改造为「RAG 学习问答助手」，包括更换 LLM（kimi → DeepSeek）、知识库（食谱 → RAG 教程文档）、元数据设计（菜品 → 章节/标题）、新增 Rerank 精排与 Streamlit 界面等。
