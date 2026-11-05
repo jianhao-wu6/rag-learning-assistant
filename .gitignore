@@ -7,6 +7,10 @@ vector_index_rag/
 *.faiss
 *.pkl
 
+# ===== 知识库数据（上游 Datawhale 教程，CC BY-NC-SA，需用户自行获取，勿提交）=====
+data/*
+!data/.gitkeep
+
 # ===== Python 缓存 =====
 __pycache__/
 *.py[cod]
