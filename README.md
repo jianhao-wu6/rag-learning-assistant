@@ -2,7 +2,7 @@
 
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-基于 [all-in-rag](https://github.com/datawhalechina/all-in-rag) 教程文档（36 篇、423 个文本块）构建的 **RAG（检索增强生成）学习问答系统**，把 RAG 的完整优化链路落地为一个可交互、可追溯的作品。
+基于 [all-in-rag](https://github.com/datawhalechina/all-in-rag) 教程文档（29 篇、338 个文本块）构建的 **RAG（检索增强生成）学习问答系统**，把 RAG 的完整优化链路落地为一个可交互、可追溯的作品。
 
 > 本项目是 [datawhalechina/all-in-rag](https://github.com/datawhalechina/all-in-rag)（Datawhale 出品，CC BY-NC-SA 4.0）`code/C8` 章节代码的**衍生作品**，由原「尝尝咸淡」食谱 RAG 系统改造而来，用于实践并展示 RAG 的核心技术。依据上游「相同方式共享」要求，本项目同样采用 **CC BY-NC-SA 4.0** 许可，详见 [LICENSE](./LICENSE)。
 
@@ -61,11 +61,11 @@ code/C8/
 ```bash
 # 克隆上游 all-in-rag，获取教程文档
 git clone https://github.com/datawhalechina/all-in-rag.git
-# 把教程文档复制到本项目的 data/ 目录
-cp -r all-in-rag/docs/* data/
+# 把中文教程（chapter1-9，共 29 篇）复制到本项目的 data/ 目录
+cp -r all-in-rag/docs/chapter[1-9] data/
 ```
 
-> 系统会自动递归扫描 `data/` 下所有 `.md` 文件；也可修改 `config.py` 的 `data_path` 指向你自己的知识库目录，详见 `data/README.md`。
+> 系统会自动递归扫描 `data/` 下所有 `.md` 文件；也可修改 `config.py` 的 `data_path` 指向你自己的知识库目录。
 
 ### 1. 环境准备
 
@@ -122,7 +122,7 @@ streamlit run app.py
 
 - 生成环节是耗时大头（约 8–9s），检索全链路仅约 1s；「检索」本身不是延迟瓶颈。
 - Rerank 复用 bge-small 双塔打分，效果弱于专用 cross-encoder 重排器，但零额外模型开销，性价比高。
-- 教程知识库共 36 篇，覆盖面有限；换知识库只需替换 `docs/` 目录与 `config.py` 的 `data_path`。
+- 教程知识库共 29 篇，覆盖面有限；换知识库只需替换 `data/` 目录与 `config.py` 的 `data_path`。
 
 ---
 
